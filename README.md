@@ -62,9 +62,9 @@ The resulting HTML is inserted into the DOM so that the <table> appears below th
 	=  +-------+---------+----------------+
 	=  | DATE  | TIME    | DESCRIPTION    |
 	=  +-------+---------+----------------+
-	=  | May 2 | 11:00am | Something      |
-	=  | May 2 | 12:00pm | Something else |
-	=  | May 4 |  8:00am | Meet foo       |
+	=  | May 2 | 11:00am | Meeting Someday|
+	=  | May 2 | 12:00pm | Meeting        |
+	=  | May 4 |  8:00am | Meeting skype  |
 	=  +-------+---------+----------------+
 	=  
 	==============================================
@@ -88,8 +88,8 @@ This should dynamically refresh the Table DOM, and not refresh the entire page.
 	=  +-------+---------+----------------+
 	=  | DATE  | TIME    | DESCRIPTION    |
 	=  +-------+---------+----------------+
-	=  | May 2 | 11:00am | Something      |
-	=  | May 2 | 12:00pm | Something else |
+	=  | May 2 | 11:00am | Meeting        |
+	=  | May 2 | 12:00pm | Meeting Skype  |
 	=  +-------+---------+----------------+
 	=  <notice only the rows containing "Something" appear>
 	==============================================
@@ -124,9 +124,9 @@ pressed, the form is hidden and the "ADD" button becomes "NEW" again.
 	=  +-------+---------+----------------+
 	=  | DATE  | TIME    | DESCRIPTION    |
 	=  +-------+---------+----------------+
-	=  | May 2 | 11:00am | Something      |
-	=  | May 2 | 12:00pm | Something else |
-	=  | May 4 |  8:00am | Meet foo       |
+	=  | May 2 | 11:00am | Meeting Someday|
+	=  | May 2 | 12:00pm | Meeting        |
+	=  | May 4 |  8:00am | Meeting Skype  |
 	=  +-------+---------+----------------+
 	=  
 	==============================================
