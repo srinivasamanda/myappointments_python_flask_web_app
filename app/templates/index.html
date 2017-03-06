@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Flask Bucket List App</title>
+
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="static/css/jumbotron-narrow.css" rel="stylesheet">
+    <script src="static/js/jquery-3.1.1.js"></script>
+    <script src="static/js/script.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Appointments</h3>
+      </div>
+      <button id="btnnew" type="button" class="btn btn-sm btn-primary">New</button>
+      <br>
+      <div id="theDiv" style="display:none;">
+        <form class="form-horizontal" action="/index" method="POST">
+          <div class="form-group">
+            <button id="btnadd" type="submit" class="btn btn-sm btn-primary">Add</button>
+            <button id="btncancel" class="btn btn-sm btn-primary">Cancel</button>
+          </div>
+          <div class="form-group">
+            <label class="col-xs-2">Date</label>
+            <div class="col-xs-8">
+            <input type="date" name="inputdate" id="inputdate" class="form-control" required autofocus value="{{request.form.inputdate}}" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-xs-2">Time</label>
+              <div class="col-xs-8">
+              <input type="time" name="inputtime" id="inputtime" class="form-control" required autofocus value="{{request.form.inputtime}}" />
+              </div>
+          </div>
+          <div class="form-group">
+            <label class="col-xs-2">Description</label>
+            <div class="col-xs-8">
+            <input type="text" name="inputdescription" id="inputdescription" class="form-control" required value="{{request.form.inputdescription}}">
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <form id="submit">
+        <div class="form-group">
+          <div class="col-xs-8">
+          <input id="search-item" type="text" class="form-control" placeholder="Search">
+          </div>
+          <button id="search-btn" class="btn btn-sm btn-primary" type="submit">Search</button>
+        </div>
+      </form>
+      <div id="theDiv2">
+      </div>
+    </div>
+
+  </body>
+</html>
